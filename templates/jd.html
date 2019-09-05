@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+    <form method="post" action="" style="width: 90%;height: 100px">
+        {% csrf_token %}
+        <input name="jd_url" type="text" style="width: 90%;height: 80%" placeholder="输入链接">
+        <br>
+        <br>
+        <input type="submit" value="确定">
+    </form>
+{% endblock content %}

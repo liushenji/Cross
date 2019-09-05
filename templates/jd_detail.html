@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+
+    <h3>产品链接:</h3><p>{{ product_url }}</p>
+    <h3>产品编号:</h3><p>{{ product_id }}</p>
+    <h3>产品名称:</h3><p>{{ product_name }}</p>
+    <h3>产品价格:</h3><p>{{ product_price }}</p>
+    <h3>产品款式:</h3><p>{{ product_style }}</p>
+    <h3>产品规格:</h3><p>{{ product_size }}</p>
+    <h3>产品图片:</h3><p>{{ product_img }}</p>
+    <h3>产品其他图片:</h3><p>{{ product_other_imgs }}</p>
+    <h3>产品描述:</h3><p>{{ product_desc|safe }}</p>
+
+
+
+{% endblock content %}
